@@ -2,11 +2,6 @@ import React from 'react'
 import SectionHeader from '../common/SectionHeader'
 import Card from './Card'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-
-// Import Swiper styles
-import 'swiper/css'
-
 const Recent = () => {
   return (
     <>
