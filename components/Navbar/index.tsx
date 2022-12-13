@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
@@ -6,7 +7,7 @@ const Navbar = () => {
     <>
       <header className='bg-gradient-to-b from-accent/50 to-white'>
         <div className='mx-auto container flex justify-between pt-5 h-20 items-center gap-8 px-4 sm:px-6 lg:px-8'>
-          <a className='block text-teal-600' href='/'>
+          <Link className='block text-teal-600' href='/'>
             <span className='sr-only'>Home</span>
             <Image
               height={100}
@@ -14,12 +15,12 @@ const Navbar = () => {
               src='/logo/cv-logo.png'
               alt='carrer vyas logo'
             />
-          </a>
-          <a
+          </Link>
+          <Link
             className='block rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-white transition hover:bg-accent/80'
             href='/'>
             Subscribe
-          </a>
+          </Link>
         </div>
       </header>
     </>
